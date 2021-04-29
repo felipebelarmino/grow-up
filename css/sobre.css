@@ -84,7 +84,7 @@ a:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .container {
@@ -120,7 +120,7 @@ a:active {
 
 .sobre-span {
   align-self: flex-start;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 70px;
   color: var(--green-color);
@@ -184,4 +184,28 @@ iframe {
 
 #home-logo:hover {
   cursor: pointer;
+}
+
+.box-servicos span {
+  color: var(--green-soft-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.box-servicos div {
+  margin-top: 60px;
+}
+
+.box-servicos p {
+  width: 500px;
+  margin-top: 5px;
+}
+
+.container-servicos {
+  display: flex;
+  margin: 50px 0;
+}
+
+.form {
+  align-self: flex-start;
 }
