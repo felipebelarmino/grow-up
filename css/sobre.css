@@ -126,6 +126,10 @@ a:active {
   color: var(--green-color);
 }
 
+.box-sobre {
+  margin-top: 80px;
+}
+
 .box-lorem {
   align-self: flex-start;
   color: var(--light-gray);
@@ -142,6 +146,10 @@ a:active {
 
 .ol {
   margin-left: 20px;
+}
+
+.ol li {
+  line-height: 30px;
 }
 
 iframe {
@@ -172,4 +180,8 @@ iframe {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 15px;
+}
+
+#home-logo:hover {
+  cursor: pointer;
 }
