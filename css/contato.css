@@ -143,11 +143,11 @@ main {
   align-self: flex-start;
 }
 
-.spans span:nth-child(1) {
+.spans a {
   color: var(--light-gray);
 }
 
-.spans span:nth-child(2) {
+.spans a {
   color: var(--green-color);
 }
 
