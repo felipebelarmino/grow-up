@@ -209,3 +209,8 @@ iframe {
 .form {
   align-self: flex-start;
 }
+
+.video-container iframe {
+  width: 60vw;
+  height: 35vw;
+}

@@ -144,7 +144,7 @@ main {
 }
 
 .spans span:nth-child(1) {
-  color: var(--light-gray)
+  color: var(--light-gray);
 }
 
 .spans span:nth-child(2) {

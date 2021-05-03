@@ -26,21 +26,20 @@
         <li><a href="">CONTATO</a></li>
       </ul>
     </header>
-
-    <main >
-      <article class="main-container">
+    <main>
+      <div class="main-container">
         <aside class="container">
-          <form class="form" action="">
+          <form class="form" method="POST">
             <div class="contato-span">
               <span>CONTATO</span>
-            </div>          
+            </div>
             <div class="input-box">
               <span class="span">NOME</span>
-              <input class="input" type="text" placeholder="Nome" />
+              <input class="input" type="text" placeholder="Nome" name="nome" required/>
             </div>
             <div class="input-box">
               <span class="span">E-MAIL</span>
-              <input class="input" type="text" placeholder="E-mail" />
+              <input class="input" type="text" placeholder="E-mail" name="email" required/>
             </div>
             <div class="input-box">
               <span class="span">Mensagem</span>
@@ -48,13 +47,13 @@
                 class="text-area"
                 type="textarea"
                 placeholder="Mensagem"
+                name="mensagem"
+                required
               ></textarea>
             </div>
             <button class="button-enviar" type="submit">ENVIAR</button>
           </form>
-        </aside>  
-
-
+        </aside>
         <aside class="container">
           <div class="spans">
             <span>Email:</span>
@@ -65,13 +64,11 @@
             <span>(11) 4444-5555</span>
           </div>
           <div>
-            <img src="/img/image 1.png" alt="imagem de mapa">
+            <img src="/img/image 1.png" alt="imagem de mapa" />
           </div>
         </aside>
-      </article>
-
+      </div>
     </main>
-
     <footer class="footer">
       <span>copyright - Grow Up</span>
     </footer>
