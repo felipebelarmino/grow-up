@@ -30,27 +30,28 @@
     <main>
       <div class="main-container">
         <form class="column" action="" method="post">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="nome" placeholder="Nome" />
+          <label class="span" for="name">Nome</label>
+          <input class="input" type="text" id="name" name="nome" placeholder="Nome" />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <label class="span" for="email">Email</label>
+          <input class="input" type="email" id="email" name="email" placeholder="Email" />
 
-          <label for="tel">Telefone</label>
-          <input type="tel" id="tel" name="tel" placeholder="Telefone" />
+          <label class="span" for="tel">Telefone</label>
+          <input class="input" type="tel" id="tel" name="tel" placeholder="Telefone" />
 
           <div>
             <fieldset name="" id="">
-              <legend>Serviços</legend>
+              <legend class="span">Serviços</legend>
 
               <input
+              class="input"
                 type="radio"
                 id="web"
                 value="Desenvolvimento Web"
                 name="servicos"
                 checked
-              />
-              <label for="web">Desenvolvimento Web</label>
+              /> 
+              <label class="span" for="web">Desenvolvimento Web</label>
 
               <input
                 type="radio"
@@ -58,7 +59,7 @@
                 value="Marketing Digital"
                 name="servicos"
               />
-              <label for="mk-digital">Marketing Digital</label>
+              <label class="span" for="mk-digital">Marketing Digital</label>
 
               <input
                 type="radio"
@@ -66,23 +67,23 @@
                 value=" Consultoria UX"
                 name="servicos"
               />
-              <label for="consultoria">Consultoria UX</label>
+              <label class="span" for="consultoria">Consultoria UX</label>
             </fieldset>
 
             <fieldset>
-              <legend>Urgência na entrega?</legend>
-              <label for="urgencia">Sim</label>
+              <legend class="span">Urgência na entrega?</legend>
+              <label class="span" for="urgencia">Sim</label>
               <input name="urgencia" type="radio" id="urgencia" />
 
-              <label for="urgencia">Não</label>
+              <label class="span" for="urgencia">Não</label>
               <input name="urgencia" type="radio" id="urgencia" checked />
             </fieldset>
 
-            <label for="data-entrega">Data de Entrega</label>
-            <input name="data-entrega" type="date" id="data-entrega" />
+            <label class="span" for="data-entrega">Data de Entrega</label>
+            <input class="input" name="data-entrega" type="date" id="data-entrega" />
 
             <br />
-            <label for="descricao">Descrição</label>
+            <label class="span" for="descricao">Descrição</label>
             <textarea
               name="descricao"
               id="descricao"
@@ -90,14 +91,14 @@
               rows="10"
             ></textarea>
 
-            <label for="anexos">Anexos</label>
-            <input name="anexos" type="file" id="anexos" />
+            <label class="span" for="anexos">Anexos</label>
+            <input  name="anexos" type="file" id="anexos" />
 
-            <label for="publico-alvo">Publico alvo do projeto:</label>
-            <input list="publicos" name="publico-alvo" id="publico-alvo" />
+            <label class="span" for="publico-alvo">Publico alvo do projeto:</label>
+            <input class="input" list="publicos" name="publico-alvo" id="publico-alvo" />
 
-            <label for="forma-pagamento">Forma de pagamento</label>
-            <select name="forma-pagamento" id="forma-pagamento" required>
+            <label class="span" class="span" for="forma-pagamento">Forma de pagamento</label>
+            <select class="input" name="forma-pagamento" id="forma-pagamento" required>
               <option selected disabled>Selecione uma opção</option>
               <option value="debito">Débito</option>
               <option value="credito">Crédito</option>
@@ -105,8 +106,8 @@
               <option value="transferencia">Transferência</option>
             </select>
 
-            <label for="origem-cliente">Como conheceu a Grow Up?</label>
-            <select name="origem-cliente" id="origem-cliente">
+            <label class="span" for="origem-cliente">Como conheceu a Grow Up?</label>
+            <select class="input" name="origem-cliente" id="origem-cliente">
               <option selected disabled>Selecione uma opção</option>
               <option value="facebook">Facebook</option>
               <option value="instagram">Instagram</option>

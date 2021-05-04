@@ -108,7 +108,7 @@ main {
 }
 
 .input {
-  width: 538px;
+  width: 100%;
   padding: 5px;
 }
 
@@ -163,7 +163,7 @@ main {
 
 .input-radios {
   display: flex;
-  width: 538px;
+  width: 100%;
   justify-content: space-between;
   height: 50px;
   align-items: center;
@@ -172,21 +172,27 @@ main {
 .column {
   display: flex;
   flex-direction: column;
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+  width: 60vw;
 }
 
 textarea {
   resize: none;
-  width: 538px;
+  width: 100%;
   display: block;
   outline: none;
 }
 
-input:not([type="radio"]):not([type="checkbox"]) {
+input {
   display: block;
   width: 100%;
+  margin: 0;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):focus {
+input:focus {
   outline: #00796B;
 }
 
@@ -204,3 +210,9 @@ option {
   display: inline-block;
 }
  
+fieldset {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
