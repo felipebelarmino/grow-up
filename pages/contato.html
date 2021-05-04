@@ -23,6 +23,7 @@
       <ul class="nav">
         <li><a href="sobre.html">SOBRE</a></li>
         <li><a href="servicos.html">SERVIÇOS</a></li>
+        <li><a href="orcamento.html">ORÇAMENTO</a></li>
         <li><a href="">CONTATO</a></li>
       </ul>
     </header>
@@ -62,6 +63,22 @@
                 name="mensagem"
                 required
               ></textarea>
+
+              <span>Selecione um assunto:</span>
+
+              <div class="input-radios">
+                <input type="radio" name="assunto" id="elogio" checked/>
+                <label for="elogio">Elogio</label>
+
+                <input type="radio" name="assunto" id="reclamacao" />
+                <label for="reclamacao">Reclamação</label>
+
+                <input type="radio" name="assunto" id="sugestao" />
+                <label for="sugestao">Sugestão</label>
+
+                <input type="radio" name="assunto" id="outros" />
+                <label for="outros">Outros</label>
+              </div>
             </div>
             <button class="button-enviar" type="submit">ENVIAR</button>
           </form>

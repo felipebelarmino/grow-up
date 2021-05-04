@@ -153,8 +153,54 @@ main {
 
 .button-enviar {
   width: 538px;
-  height: 26px;
+  height: 36px;
   border: none;
+  font-size: 18px;
+  font-weight: 500;
   background-color: var(--green-soft-color);
   color: var(--font-white);
 }
+
+.input-radios {
+  display: flex;
+  width: 538px;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  width: 538px;
+  display: block;
+  outline: none;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focus {
+  outline: #00796B;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #00796B;
+}
+
+select {
+  display: flex;
+  width: 100%;
+}
+
+option {
+  display: inline-block;
+}
+ 

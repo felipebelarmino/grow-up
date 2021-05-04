@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contato.css" />
+    <title>Grow Up</title>
+  </head>
+  <body id="body">
+    <header id="header">
+      <img
+        id="home-logo"
+        class="logo"
+        src="/img/Grow-Up-logo-white.png"
+        alt=""
+      />
+      <ul class="nav">
+        <li><a href="sobre.html">SOBRE</a></li>
+        <li><a href="servicos.html">SERVIÇOS</a></li>
+        <li><a href="#">ORÇAMENTO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="main-container">
+        <form class="column" action="" method="post">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="nome" placeholder="Nome" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+
+          <label for="tel">Telefone</label>
+          <input type="tel" id="tel" name="tel" placeholder="Telefone" />
+
+          <div>
+            <fieldset name="" id="">
+              <legend>Serviços</legend>
+
+              <input
+                type="radio"
+                id="web"
+                value="Desenvolvimento Web"
+                name="servicos"
+                checked
+              />
+              <label for="web">Desenvolvimento Web</label>
+
+              <input
+                type="radio"
+                id="mk-digital"
+                value="Marketing Digital"
+                name="servicos"
+              />
+              <label for="mk-digital">Marketing Digital</label>
+
+              <input
+                type="radio"
+                id="consultoria"
+                value=" Consultoria UX"
+                name="servicos"
+              />
+              <label for="consultoria">Consultoria UX</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Urgência na entrega?</legend>
+              <label for="urgencia">Sim</label>
+              <input name="urgencia" type="radio" id="urgencia" />
+
+              <label for="urgencia">Não</label>
+              <input name="urgencia" type="radio" id="urgencia" checked />
+            </fieldset>
+
+            <label for="data-entrega">Data de Entrega</label>
+            <input name="data-entrega" type="date" id="data-entrega" />
+
+            <br />
+            <label for="descricao">Descrição</label>
+            <textarea
+              name="descricao"
+              id="descricao"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <label for="anexos">Anexos</label>
+            <input name="anexos" type="file" id="anexos" />
+
+            <label for="publico-alvo">Publico alvo do projeto:</label>
+            <input list="publicos" name="publico-alvo" id="publico-alvo" />
+
+            <label for="forma-pagamento">Forma de pagamento</label>
+            <select name="forma-pagamento" id="forma-pagamento" required>
+              <option selected disabled>Selecione uma opção</option>
+              <option value="debito">Débito</option>
+              <option value="credito">Crédito</option>
+              <option value="boleto">Boleto</option>
+              <option value="transferencia">Transferência</option>
+            </select>
+
+            <label for="origem-cliente">Como conheceu a Grow Up?</label>
+            <select name="origem-cliente" id="origem-cliente">
+              <option selected disabled>Selecione uma opção</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="linkedin">Linkedin</option>
+              <option value="google">Google</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>copyright - Grow Up</span>
+    </footer>
+  </body>
+  <script src="/script/script.js"></script>
+</html>
