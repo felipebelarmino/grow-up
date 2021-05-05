@@ -185,11 +185,11 @@ a:active {
     position: absolute;
     right: 0;
     top: -2000px;
-    z-index: -20;
+    z-index: 0;
     background: var(--green-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: all 0.2s ease-in-out;
-    border-radius: 0px 8px 0;
+    border-radius: 0px 0 0 8px;
   }
 
   #header {
@@ -197,6 +197,7 @@ a:active {
     flex-wrap: wrap;
     height: 20vh;
     box-shadow: none;
+    z-index: 30;
   }
 
   .logo {
