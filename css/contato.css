@@ -214,3 +214,32 @@ fieldset {
   margin: 0;
 
 }
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+
+  66% {
+    transform: rotate(-1deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-destaque {
+  animation: flutuar 4s infinite;
+}

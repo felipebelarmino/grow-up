@@ -106,17 +106,17 @@ textarea {
 }
 
 input {
-  margin:20px 0;
+  margin: 20px 0;
   padding: 5px;
 }
 
 input:focus {
-  outline: #00796B;
+  outline: #00796b;
 }
 
 textarea:focus {
   outline: none;
-  border: 1px solid #00796B;
+  border: 1px solid #00796b;
 }
 
 .span {
@@ -133,5 +133,34 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding:0 10px;
+  padding: 0 10px;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+
+  66% {
+    transform: rotate(-1deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-destaque {
+  animation: flutuar 4s infinite;
 }
